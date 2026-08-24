@@ -1,0 +1,27 @@
+Turtle Shape Designer - Version History
+
+Version 1 - Rough first attempt
+- Click points on a small grid and save Turtle code or a point list.
+- Uses default-looking buttons and has only reset, colour, and export controls.
+- Boundary issue 1: a shape with exactly 3 points is rejected, even though a triangle should be allowed.
+- Boundary issue 2: trying to export before making a shape gives only a status message, with no clear warning.
+- These issues are intentionally silent so they can be found during testing.
+
+Version 2 - Better editing
+- Fixes both Version 1 issues by allowing triangles and giving clearer export feedback.
+- Adds snapping to nearby saved corners.
+- Adds Undo last shape.
+- Does not yet snap to lines or undo unfinished points.
+
+Version 3 - More precise drawing
+- Adds snapping to the nearest point on saved lines as well as corners.
+- Adds Undo last point.
+- Changes the controls and layout to look much more like the final version.
+- Boundary issue 1: a click exactly on the edge of the snap distance is not detected.
+- Boundary issue 2: pressing Undo last point with no unfinished points gives no useful feedback.
+- These issues are intentionally left for Version 4 to fix.
+
+Version 4 - Current final version
+- Turtle10 GOAL.py is the current version.
+- Includes point and line snapping, undo point, undo shape, clear all, larger spacing, cleaner buttons, and built-in instructions.
+- Fixes the Version 3 boundary issues.
