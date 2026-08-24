@@ -1,0 +1,8 @@
+# Downloads contains many unrelated files; keep this repository focused on the project.
+*
+!.gitignore
+!Turtle10 Version 1.py
+!Turtle10 Version 2.py
+!Turtle10 Version 3.py
+!Turtle10 GOAL.py
+!Version History V2.txt
