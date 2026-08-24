@@ -39,7 +39,7 @@ Testing issues left in this version:
 These were left as testable issues for the final correction rather than hidden behind extra popups.
 
 Version 4 - Final version
-The current final file is Turtle10 GOAL.py.
+The current final file is Turtle10 Final Version.py.
 
 Final improvements:
 - Correct boundary handling for snapping and undo.
