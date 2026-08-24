@@ -1,8 +1,5 @@
-# Downloads contains many unrelated files; keep this repository focused on the project.
+# Downloads contains unrelated files; only track the project folder.
 *
 !.gitignore
-!Turtle10 Version 1.py
-!Turtle10 Version 2.py
-!Turtle10 Version 3.py
-!Turtle10 Final Version.py
-!Version History V2.txt
+!Turtle Shape Designer/
+!Turtle Shape Designer/**
