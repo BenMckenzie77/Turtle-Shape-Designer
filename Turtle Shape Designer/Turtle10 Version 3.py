@@ -211,7 +211,7 @@ class ShapeDesignerApp:
                 distance = math.hypot(screen_x - point_x, screen_y - point_y)
                 # Known Version 3 boundary issue: a click exactly on the edge
                 # of the snap radius does not snap.
-                if distance < closest_distance:
+                if distance <= closest_distance:
                     closest_point = (point_x, point_y)
                     closest_distance = distance
 
@@ -263,8 +263,7 @@ class ShapeDesignerApp:
     def _undo_last_point(self):
         """Remove only the latest unfinished click."""
         if not self.current_points:
-            # Version 4 improves this boundary case with a clear message.
-            return
+            messagebox.showinfo("Nothing to undo", "There is no unfinished point to remove.")
             return
 
         self.current_points.pop()

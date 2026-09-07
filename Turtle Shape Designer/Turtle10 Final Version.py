@@ -258,7 +258,8 @@ class ShapeDesignerApp:
         turtle_y = self.origin_y - click_y
 
         self.current_points.append((turtle_x, turtle_y))
-        
+        self.status_label.config(text=f"Point {len(self.current_points)} added. Add the shape part when you are finished.")
+
         # Show the unfinished outline straight away, so clicks do not feel invisible.
         self._draw_current_points()
 
