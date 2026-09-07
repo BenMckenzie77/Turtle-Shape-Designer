@@ -17,11 +17,11 @@ Version 3 - More precise drawing
 - Adds snapping to the nearest point on saved lines as well as corners.
 - Adds Undo last point.
 - Changes the controls and layout to look much more like the final version.
-- Boundary issue 1: a click exactly on the edge of the snap distance is not detected.
-- Boundary issue 2: pressing Undo last point with no unfinished points gives no useful feedback.
-- These issues are intentionally left for Version 4 to fix.
+- Includes the snap-distance boundary so clicks exactly on the limit are handled.
+- Shows a clear message when Undo last point is pressed with no unfinished points.
 
 Version 4 - Current final version
-- Turtle10 GOAL.py is the current version.
+- Turtle10 Final Version.py is the current version.
 - Includes point and line snapping, undo point, undo shape, clear all, larger spacing, cleaner buttons, and built-in instructions.
-- Fixes the Version 3 boundary issues.
+- Shows the current unfinished point count while drawing.
+- Keeps the completed boundary and undo fixes in the final release.

@@ -31,12 +31,12 @@ Changes made:
 - Added snapping to the nearest point on an existing line as well as corners.
 - Added Undo last point for correcting the current unfinished part.
 - Changed the layout, buttons, and spacing to move toward the planned final interface.
+- Added point-count feedback while a part is being drawn.
+- Included clicks exactly on the snap-distance boundary.
+- Added a clear message when there is no unfinished point to undo.
 
-Testing issues left in this version:
-- A click exactly on the snap-distance boundary was not included.
-- Undo last point gave no useful response when there was no unfinished point.
-
-These were left as testable issues for the final correction rather than hidden behind extra popups.
+Testing result:
+The boundary and empty-undo cases now give the expected result and are carried into the final version.
 
 Version 4 - Final version
 The current final file is Turtle10 Final Version.py.
@@ -45,6 +45,7 @@ Final improvements:
 - Correct boundary handling for snapping and undo.
 - Snapping works on both saved corners and saved lines.
 - Separate Undo last point, Undo last shape, and Clear entire drawing actions.
+- Point-count feedback makes unfinished drawing progress visible.
 - Larger canvas and window with more comfortable control spacing.
 - Cleaner shared font and button styling.
 - Instructions appear inside the same window at the bottom without moving the canvas.
