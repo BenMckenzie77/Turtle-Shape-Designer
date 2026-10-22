@@ -4,18 +4,6 @@ Interactive Turtle Shape Designer - Version 5 (FINAL FINAL)
 The idea is to let students draw a shape with clicks instead of having to
 guess a long list of coordinates first. The finished drawing can then become
 real Turtle code that they can open, edit, and learn from.
-
-Version 5 changes (from final testing of Version 4):
-- Saving now catches errors and tells the user, instead of failing silently.
-- Saving warns about unfinished points that have not been added yet.
-- Clicking the same spot twice in a row no longer adds a duplicate point.
-- Parts need 3 different points that are not all in one straight line.
-- Snapped points are rounded to whole numbers so the saved code is tidy.
-- The saved Turtle program shows the shape the same way up and the same
-  size as it was drawn.
-- The status line updates after "Undo last point".
-- The instructions panel grows to fit, so no steps are cut off.
-- Settings and colours are named constants at the top of the file.
 """
 
 # Math handles the small distance calculations needed by snap mode.
@@ -26,8 +14,6 @@ from tkinter import colorchooser, filedialog, font, messagebox
 
 # ---------------------------------------------------------------------------
 # Settings
-# Everything that might need changing later lives here, so nobody has to
-# hunt through the code for a number or a colour.
 # ---------------------------------------------------------------------------
 WINDOW_TITLE = "Year 10 Python Turtle Shape Designer"
 WINDOW_SIZE = "1100x900"
